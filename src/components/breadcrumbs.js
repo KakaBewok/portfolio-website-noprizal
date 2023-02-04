@@ -15,7 +15,7 @@ const Breadcrumbs = () => {
           <li>
             {/* <div className="bg-sky-600 text-white px-2 py-1 rounded"> */}
             <Link to="/home">
-              <a className="font-bold">
+              <a className="font-semibold underline">
                 {locale === 'ID' ? 'Beranda' : 'Home'}
               </a>
             </Link>
