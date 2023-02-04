@@ -13,17 +13,25 @@ const Breadcrumbs = () => {
       <div className="text-xs md:text-sm breadcrumbs px-5 mb-8 dark:text-gray-100">
         <ul>
           <li>
-            {/* <div className="bg-sky-600 text-white px-2 py-1 rounded"> */}
             <Link to="/home">
-              <a className="font-semibold underline">
-                {locale === 'ID' ? 'Beranda' : 'Home'}
-              </a>
+              {window.location.href === 'http://localhost:3000/home' ? (
+                <a className="font-semibold underline">
+                  {locale === 'ID' ? 'Beranda' : 'Home'}
+                </a>
+              ) : (
+                <a>{locale === 'ID' ? 'Beranda' : 'Home'}</a>
+              )}
             </Link>
-            {/* </div> */}
           </li>
           <li>
             <Link to="/project">
-              <a> {locale === 'ID' ? 'Proyek' : 'Projects'}</a>
+              {window.location.href === 'http://localhost:3000/project' ? (
+                <a className="font-semibold underline">
+                  {locale === 'ID' ? 'Proyek' : 'Projects'}
+                </a>
+              ) : (
+                <a> {locale === 'ID' ? 'Proyek' : 'Projects'}</a>
+              )}
             </Link>
           </li>
           <li>
