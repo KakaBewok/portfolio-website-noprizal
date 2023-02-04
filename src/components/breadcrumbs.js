@@ -27,9 +27,8 @@ const Breadcrumbs = () => {
           </li>
           <li>
             <Link to="/project">
-              {window.location.href === 'http://localhost:3000/project' ||
-              window.location.href ===
-                'https://portfolio-website-noprizal.vercel.app/project' ? (
+              {/* window.location.href === 'http://localhost:3000/project' */}
+              {window.location.href.includes('project') ? (
                 <a className="font-semibold underline">
                   {locale === 'ID' ? 'Proyek' : 'Projects'}
                 </a>
