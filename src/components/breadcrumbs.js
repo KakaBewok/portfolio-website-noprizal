@@ -14,7 +14,9 @@ const Breadcrumbs = () => {
         <ul>
           <li>
             <Link to="/home">
-              {window.location.href === 'http://localhost:3000/home' ? (
+              {window.location.href === 'http://localhost:3000/home' ||
+              window.location.href ===
+                'https://portfolio-website-noprizal.vercel.app/home' ? (
                 <a className="font-semibold underline">
                   {locale === 'ID' ? 'Beranda' : 'Home'}
                 </a>
@@ -38,17 +40,41 @@ const Breadcrumbs = () => {
           </li>
           <li>
             <Link to="/certificate">
-              <a> {locale === 'ID' ? 'Sertifikat' : 'Certificates'}</a>
+              {window.location.href === 'http://localhost:3000/certificate' ||
+              window.location.href ===
+                'https://portfolio-website-noprizal.vercel.app/certificate' ? (
+                <a className="font-semibold underline">
+                  {locale === 'ID' ? 'Sertifikat' : 'Certificates'}
+                </a>
+              ) : (
+                <a> {locale === 'ID' ? 'Sertifikat' : 'Certificates'}</a>
+              )}
             </Link>
           </li>
           <li>
             <Link to="/about">
-              <a> {locale === 'ID' ? 'Tentang' : 'About'}</a>
+              {window.location.href === 'http://localhost:3000/about' ||
+              window.location.href ===
+                'https://portfolio-website-noprizal.vercel.app/about' ? (
+                <a className="font-semibold underline">
+                  {locale === 'ID' ? 'Tentang' : 'About'}
+                </a>
+              ) : (
+                <a> {locale === 'ID' ? 'Tentang' : 'About'}</a>
+              )}
             </Link>
           </li>
           <li>
             <Link to="/contact">
-              <a> {locale === 'ID' ? 'Kontak' : 'Contact'}</a>
+              {window.location.href === 'http://localhost:3000/contact' ||
+              window.location.href ===
+                'https://portfolio-website-noprizal.vercel.app/contact' ? (
+                <a className="font-semibold underline">
+                  {locale === 'ID' ? 'Kontak' : 'Contact'}
+                </a>
+              ) : (
+                <a> {locale === 'ID' ? 'Kontak' : 'Contact'}</a>
+              )}
             </Link>
           </li>
         </ul>
