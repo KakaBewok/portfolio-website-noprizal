@@ -4,6 +4,7 @@ import React, { useContext } from 'react';
 import { GlobalContext } from '../context/globalContext';
 import ToggleTheme from './toggleTheme';
 import ToggleLocale from './toggleLocale';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const { locale } = useContext(GlobalContext);
@@ -36,29 +37,39 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow-md bg-base-100 rounded-box w-52 dark:bg-gray-500"
             >
               <li>
-                <a className="dark:hover:bg-gray-700">
-                  {locale === 'ID' ? 'Beranda' : 'Home'}
-                </a>
+                <Link to="/home">
+                  <a className="dark:hover:bg-gray-700">
+                    {locale === 'ID' ? 'Beranda' : 'Home'}
+                  </a>
+                </Link>
               </li>
               <li>
-                <a className="dark:hover:bg-gray-700">
-                  {locale === 'ID' ? 'Proyek' : 'Projects'}
-                </a>
+                <Link to="/project">
+                  <a className="dark:hover:bg-gray-700">
+                    {locale === 'ID' ? 'Proyek' : 'Projects'}
+                  </a>
+                </Link>
               </li>
               <li>
-                <a className="dark:hover:bg-gray-700">
-                  {locale === 'ID' ? 'Sertifikat' : 'Certificates'}
-                </a>
+                <Link to="/certificate">
+                  <a className="dark:hover:bg-gray-700">
+                    {locale === 'ID' ? 'Sertifikat' : 'Certificates'}
+                  </a>
+                </Link>
               </li>
               <li>
-                <a className="dark:hover:bg-gray-700">
-                  {locale === 'ID' ? 'Tentang' : 'About'}
-                </a>
+                <Link to="/about">
+                  <a className="dark:hover:bg-gray-700">
+                    {locale === 'ID' ? 'Tentang' : 'About'}
+                  </a>
+                </Link>
               </li>
               <li>
-                <a className="dark:hover:bg-gray-700">
-                  {locale === 'ID' ? 'Kontak' : 'Contact'}
-                </a>
+                <Link to="/contact">
+                  <a className="dark:hover:bg-gray-700">
+                    {locale === 'ID' ? 'Kontak' : 'Contact'}
+                  </a>
+                </Link>
               </li>
               <li className="md:hidden">
                 <ToggleLocale />
@@ -71,9 +82,11 @@ const Navbar = () => {
         </div>
         {/* Logo/Brand */}
         <div className="md:hidden navbar-center">
-          <a className="btn btn-ghost normal-case text-xl ml-20 md:ml-0">
-            Noprizal
-          </a>
+          <Link to="/home">
+            <a className="btn btn-ghost normal-case text-xl ml-20 md:ml-0">
+              Noprizal
+            </a>
+          </Link>
         </div>
         {/* Menu Right */}
         <div className="navbar-end hidden md:flex">

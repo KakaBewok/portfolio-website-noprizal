@@ -11,7 +11,8 @@ const TitleProject = () => {
           {locale === 'ID' ? 'Proyek Saya' : 'My Projects'}
         </h2>
         <p className="dark:text-gray-100 text-sm">
-          Number of projects: {projects.length}
+          {locale === 'ID' ? 'Jumlah proyek: ' : 'Number of projects: '}
+          {projects.length}
         </p>
       </div>
     </>

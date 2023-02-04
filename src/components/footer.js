@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/globalContext';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { locale } = useContext(GlobalContext);
@@ -10,21 +11,31 @@ const Footer = () => {
       <footer className="footer footer-center p-10 bg-base-100 text-base-content dark:bg-gray-500 dark:text-gray-200">
         {/* Links */}
         <div className="grid grid-flow-col gap-4">
-          <a className="link link-hover">
-            {locale === 'ID' ? 'Beranda' : 'Home'}
-          </a>
-          <a className="link link-hover">
-            {locale === 'ID' ? 'Proyek' : 'Projects'}
-          </a>
-          <a className="link link-hover">
-            {locale === 'ID' ? 'Sertifikat' : 'Certificates'}
-          </a>
-          <a className="link link-hover">
-            {locale === 'ID' ? 'Tentang' : 'About'}
-          </a>
-          <a className="link link-hover">
-            {locale === 'ID' ? 'Kontak' : 'Contact'}
-          </a>
+          <Link to="/home">
+            <a className="link link-hover">
+              {locale === 'ID' ? 'Beranda' : 'Home'}
+            </a>
+          </Link>
+          <Link to="/project">
+            <a className="link link-hover">
+              {locale === 'ID' ? 'Proyek' : 'Projects'}
+            </a>
+          </Link>
+          <Link to="/certificate">
+            <a className="link link-hover">
+              {locale === 'ID' ? 'Sertifikat' : 'Certificates'}
+            </a>
+          </Link>
+          <Link to="/about">
+            <a className="link link-hover">
+              {locale === 'ID' ? 'Tentang' : 'About'}
+            </a>
+          </Link>
+          <Link to="/contact">
+            <a className="link link-hover">
+              {locale === 'ID' ? 'Kontak' : 'Contact'}
+            </a>
+          </Link>
         </div>
         {/* Logo */}
         <div>
