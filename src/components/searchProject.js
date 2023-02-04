@@ -1,14 +1,8 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/globalContext';
 
-const SearchProject = () => {
-  const { locale, keyword, setKeyword, setSearchParams } =
-    useContext(GlobalContext);
-
-  const keywordSearchChangeHandler = (keyword) => {
-    setKeyword(keyword);
-    setSearchParams({ keyword });
-  };
+const SearchProject = ({ keywordSearchChangeHandler, keyword }) => {
+  const { locale } = useContext(GlobalContext);
 
   return (
     <>

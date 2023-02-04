@@ -1,21 +1,15 @@
-import React, { useContext } from 'react';
-import { GlobalContext } from '../context/globalContext';
+import React from 'react';
 import Navbar from '../components/navbar';
 import Breadcrumbs from '../components/breadcrumbs';
 import TitleProject from '../components/titleProject';
 import SearchProject from '../components/searchProject';
 import FilterProject from '../components/filterProject';
-import CardList from '../components/cardList';
+// import CardList from '../components/cardList';
 import Footer from '../components/footer';
+import { useParams } from 'react-router-dom';
 
-const ProjectPage = () => {
-  const { keyword, setKeyword, setSearchParams } = useContext(GlobalContext);
-
-  const keywordSearchChangeHandler = (keyword) => {
-    setKeyword(keyword);
-    setSearchParams({ keyword });
-  };
-
+const DetailProjectPage = () => {
+  const { id } = useParams();
   return (
     <>
       <Navbar />
@@ -24,15 +18,13 @@ const ProjectPage = () => {
         <div className="mb-10 px-5 flex justify-between items-center flex-wrap w-full">
           <TitleProject />
           <div className="flex flex-wrap justify-center items-center gap-3">
-            <SearchProject
-              keywordSearchChangeHandler={keywordSearchChangeHandler}
-              keyword={keyword}
-            />
+            <SearchProject />
             <FilterProject />
           </div>
         </div>
         <div className="gap-5 flex flex-wrap">
-          <CardList />
+          {/* <CardList /> */}
+          <h1>Detail Page {id}</h1>
         </div>
       </div>
       <Footer />
@@ -40,4 +32,4 @@ const ProjectPage = () => {
   );
 };
 
-export default ProjectPage;
+export default DetailProjectPage;
