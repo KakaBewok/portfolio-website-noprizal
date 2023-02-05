@@ -22,9 +22,9 @@ const ToggleTheme = () => {
       onClick={toggleTheme}
     >
       {theme === 'light' ? (
-        <FaMoon className="w-5 h-5" />
+        <FaMoon className="w-4 h-4" />
       ) : (
-        <FaSun className="w-5 h-5" />
+        <FaSun className="w-4 h-4" />
       )}
     </button>
   );
