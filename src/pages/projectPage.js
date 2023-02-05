@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import { GlobalContext } from '../context/globalContext';
+import React from 'react';
 import Navbar from '../components/navbar';
 import Breadcrumbs from '../components/breadcrumbs';
 import TitleProject from '../components/titleProject';
@@ -9,13 +8,6 @@ import CardList from '../components/cardList';
 import Footer from '../components/footer';
 
 const ProjectPage = () => {
-  const { keyword, setKeyword, setSearchParams } = useContext(GlobalContext);
-
-  const keywordSearchChangeHandler = (keyword) => {
-    setKeyword(keyword);
-    setSearchParams({ keyword });
-  };
-
   return (
     <>
       <Navbar />
@@ -24,10 +16,7 @@ const ProjectPage = () => {
         <div className="mb-10 px-5 flex justify-between items-center flex-wrap w-full">
           <TitleProject />
           <div className="flex flex-wrap justify-center items-center gap-3">
-            <SearchProject
-              keywordSearchChangeHandler={keywordSearchChangeHandler}
-              keyword={keyword}
-            />
+            <SearchProject />
             <FilterProject />
           </div>
         </div>

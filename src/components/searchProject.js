@@ -1,8 +1,18 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/globalContext';
+import { useNavigate } from 'react-router-dom';
 
-const SearchProject = ({ keywordSearchChangeHandler, keyword }) => {
-  const { locale } = useContext(GlobalContext);
+const SearchProject = () => {
+  const { locale, keyword, setKeyword, setSearchParams } =
+    useContext(GlobalContext);
+
+  const navigate = useNavigate();
+
+  const keywordSearchChangeHandler = (keyword) => {
+    setKeyword(keyword);
+    setSearchParams({ keyword });
+    navigate(`/project?keyword=${keyword}`);
+  };
 
   return (
     <>
