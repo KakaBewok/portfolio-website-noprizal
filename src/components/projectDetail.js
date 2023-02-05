@@ -14,7 +14,7 @@ const ProjectDetail = () => {
   const {
     name,
     image,
-    link,
+    // link,
     description,
     category,
     tech_stack,

@@ -38,37 +38,27 @@ const Navbar = () => {
             >
               <li>
                 <Link to="/home">
-                  <a className="dark:hover:bg-gray-700">
-                    {locale === 'ID' ? 'Beranda' : 'Home'}
-                  </a>
+                  <a>{locale === 'ID' ? 'Beranda' : 'Home'}</a>
                 </Link>
               </li>
               <li>
                 <Link to="/project">
-                  <a className="dark:hover:bg-gray-700">
-                    {locale === 'ID' ? 'Proyek' : 'Projects'}
-                  </a>
+                  <a>{locale === 'ID' ? 'Proyek' : 'Projects'}</a>
                 </Link>
               </li>
               <li>
                 <Link to="/certificate">
-                  <a className="dark:hover:bg-gray-700">
-                    {locale === 'ID' ? 'Sertifikat' : 'Certificates'}
-                  </a>
+                  <a>{locale === 'ID' ? 'Sertifikat' : 'Certificates'}</a>
                 </Link>
               </li>
               <li>
                 <Link to="/about">
-                  <a className="dark:hover:bg-gray-700">
-                    {locale === 'ID' ? 'Tentang' : 'About'}
-                  </a>
+                  <a>{locale === 'ID' ? 'Tentang' : 'About'}</a>
                 </Link>
               </li>
               <li>
                 <Link to="/contact">
-                  <a className="dark:hover:bg-gray-700">
-                    {locale === 'ID' ? 'Kontak' : 'Contact'}
-                  </a>
+                  <a>{locale === 'ID' ? 'Kontak' : 'Contact'}</a>
                 </Link>
               </li>
               <li className="md:hidden">
