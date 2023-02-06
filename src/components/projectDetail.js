@@ -3,7 +3,7 @@ import { GlobalContext } from '../context/globalContext';
 import { useParams } from 'react-router-dom';
 
 const ProjectDetail = () => {
-  const { projects } = useContext(GlobalContext);
+  const { projects, locale } = useContext(GlobalContext);
   const { id } = useParams();
 
   const arrayProjectDetails = projects.filter((project) => {
@@ -33,13 +33,14 @@ const ProjectDetail = () => {
             src={image}
             alt={name}
           />
+          {/* button */}
           <div className="flex justify-center items-center flex-wrap gap-4 w-full">
             <div
               className="tooltip tooltip-bottom"
               data-tip="Under maintenance"
             >
               <button className="btn btn-outline tracking-widest mt-5 px-12 md:px-28 dark:bg-slate-100 dark:text-slate-700">
-                Code
+                {locale === 'ID' ? 'Kode' : 'Code'}
               </button>
             </div>
             <div>
@@ -56,7 +57,7 @@ const ProjectDetail = () => {
             {/* 1 */}
             <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
-                Project Name
+                {locale === 'ID' ? 'Nama Proyek' : 'Project Name'}
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
                 {name}
@@ -65,7 +66,7 @@ const ProjectDetail = () => {
             {/* 2 */}
             <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
-                Description
+                {locale === 'ID' ? 'Deskripsi' : 'Description'}
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
                 {description}
@@ -74,7 +75,7 @@ const ProjectDetail = () => {
             {/* 3 */}
             <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
-                Category
+                {locale === 'ID' ? 'Kategori' : 'Category'}
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
                 {category}
@@ -83,7 +84,7 @@ const ProjectDetail = () => {
             {/* 4 */}
             <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
-                Tech Stack
+                {locale === 'ID' ? 'Teknologi' : 'Tech Stack'}
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
                 {tech_stack}
@@ -92,7 +93,7 @@ const ProjectDetail = () => {
             {/* 5 */}
             <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
-                Feature
+                {locale === 'ID' ? 'Fitur' : 'Feature'}
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
                 {feature}
@@ -101,7 +102,7 @@ const ProjectDetail = () => {
             {/* 6 */}
             <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
-                Data Source
+                {locale === 'ID' ? 'Sumber Data' : 'Source Code'}
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
                 {data}
@@ -110,7 +111,7 @@ const ProjectDetail = () => {
             {/* 7 */}
             <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
-                Year
+                {locale === 'ID' ? 'Tahun' : 'Year'}
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
                 {year}

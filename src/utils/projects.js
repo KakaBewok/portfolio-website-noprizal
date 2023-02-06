@@ -5,6 +5,7 @@ const projects = [
     name: 'Loker.id',
     image: '/images/projects/reactjs_lokerid.jpg',
     link: 'https://web-app-job-vacancy.vercel.app/',
+    source_code: '',
     description:
       'This website is useful for providing information on job vacancies in Indonesia. This website acts as a facilitator of job matching and communication between job seekers and employers.',
     category: 'Front-End Web',
