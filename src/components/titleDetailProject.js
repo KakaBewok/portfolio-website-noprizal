@@ -6,7 +6,7 @@ const TitleDetailProject = () => {
 
   return (
     <>
-      <div className="flex justify-center items-start mb-10 md:mb-0">
+      <div className="mb-7 md:mb-10">
         <h2 className="font-semibold text-3xl text-gray-700 dark:text-white ">
           {locale === 'ID' ? 'Detail Proyek' : 'Project Details'}
         </h2>

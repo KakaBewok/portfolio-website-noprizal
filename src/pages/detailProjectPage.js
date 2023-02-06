@@ -11,7 +11,7 @@ const DetailProjectPage = () => {
       <Navbar />
       <div className="py-24 dark:bg-slate-700">
         <Breadcrumbs />
-        <div className="mb-10 px-5 flex justify-between items-center flex-wrap w-full">
+        <div className="px-5 flex justify-between items-center flex-wrap w-full">
           <TitleDetailProject />
         </div>
         <div className="gap-5 flex flex-wrap">

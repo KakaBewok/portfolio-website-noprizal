@@ -14,7 +14,7 @@ const ProjectDetail = () => {
   const {
     name,
     image,
-    // link,
+    link,
     description,
     category,
     tech_stack,
@@ -25,32 +25,46 @@ const ProjectDetail = () => {
 
   return (
     <>
-      <div className="rounded-lg mx-auto max-w-[90%] md:max-w-[70%] lg:max-w-[50%] overflow-hidden bg-white shadow-lg sm:rounded-lg">
+      <div className="rounded-lg mx-auto max-w-[90%] md:max-w-[80%] lg:max-w-[70%] overflow-hidden bg-white shadow-lg dark:bg-slate-800">
         {/* HEADER */}
-        <div className="px-4 py-5 sm:px-6 dark:bg-gray-700">
+        <div className="px-4 py-5 sm:px-6 dark:bg-gray-800">
           <img
-            className="rounded-md transition-all duration-300 hover:opacity-90"
+            className="rounded-md transition-all duration-300 hover:opacity-80"
             src={image}
             alt={name}
           />
-          <div className="tooltip tooltip-right" data-tip="Under maintenance">
-            <button className="btn btn-primary mt-3">Apply Now</button>
+          <div className="flex justify-center items-center flex-wrap gap-4 w-full">
+            <div
+              className="tooltip tooltip-bottom"
+              data-tip="Under maintenance"
+            >
+              <button className="btn btn-outline tracking-widest mt-5 px-12 md:px-28 dark:bg-slate-100 dark:text-slate-700">
+                Code
+              </button>
+            </div>
+            <div>
+              <a href={link} target="_blank" rel="noreferrer">
+                <button className="btn btn-success text-white tracking-widest mt-5 px-12 md:px-28">
+                  Demo
+                </button>
+              </a>
+            </div>
           </div>
         </div>
-        <div className="border-t border-gray-200">
+        <div className="border-t border-gray-200 dark:border-none">
           <dl>
             {/* 1 */}
-            <div className="px-4 py-5 bg-gray-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-gray-700">
-              <dt className="text-sm font-medium text-gray-500 dark:text-gray-100">
-                Name
+            <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+              <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
+                Project Name
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
                 {name}
               </dd>
             </div>
             {/* 2 */}
-            <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-gray-700">
-              <dt className="text-sm font-medium text-gray-500 dark:text-gray-100">
+            <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+              <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 Description
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
@@ -58,8 +72,8 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 3 */}
-            <div className="px-4 py-5 bg-gray-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-gray-700">
-              <dt className="text-sm font-medium text-gray-500 dark:text-gray-100">
+            <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+              <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 Category
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
@@ -67,8 +81,8 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 4 */}
-            <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-gray-700">
-              <dt className="text-sm font-medium text-gray-500 dark:text-gray-100">
+            <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+              <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 Tech Stack
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
@@ -76,8 +90,8 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 5 */}
-            <div className="px-4 py-5 bg-gray-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-gray-700">
-              <dt className="text-sm font-medium text-gray-500 dark:text-gray-100">
+            <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+              <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 Feature
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
@@ -85,8 +99,8 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 6 */}
-            <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-gray-700">
-              <dt className="text-sm font-medium text-gray-500 dark:text-gray-100">
+            <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+              <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 Data Source
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
@@ -94,8 +108,8 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 7 */}
-            <div className="px-4 py-5 bg-gray-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-gray-700">
-              <dt className="text-sm font-medium text-gray-500 dark:text-gray-100">
+            <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+              <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 Year
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
