@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/globalContext';
 import { useParams } from 'react-router-dom';
@@ -15,6 +16,7 @@ const ProjectDetail = () => {
     name,
     image,
     link,
+    source_code,
     description,
     category,
     tech_stack,
@@ -35,17 +37,16 @@ const ProjectDetail = () => {
           />
           {/* button */}
           <div className="flex justify-center items-center flex-wrap gap-4 w-full">
-            <div
-              className="tooltip tooltip-bottom"
-              data-tip="Under maintenance"
-            >
-              <button className="btn btn-outline tracking-widest mt-5 px-12 md:px-28 dark:bg-slate-100 dark:text-slate-700">
-                {locale === 'ID' ? 'Kode' : 'Code'}
-              </button>
+            <div>
+              <a href={source_code} target="_blank" rel="noreferrer">
+                <button className="btn btn-outline tracking-widest mt-5 px-12 md:px-28 dark:bg-slate-100 dark:text-slate-700 dark:hover:opacity-70">
+                  {locale === 'ID' ? 'Kode' : 'Code'}
+                </button>
+              </a>
             </div>
             <div>
               <a href={link} target="_blank" rel="noreferrer">
-                <button className="btn btn-success text-white tracking-widest mt-5 px-12 md:px-28">
+                <button className="btn btn-success text-white tracking-widest mt-5 px-12 md:px-28 hover:opacity-80">
                   Demo
                 </button>
               </a>
@@ -102,10 +103,21 @@ const ProjectDetail = () => {
             {/* 6 */}
             <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
-                {locale === 'ID' ? 'Sumber Data' : 'Source Code'}
+                {locale === 'ID' ? 'Sumber Data' : 'Source Data'}
               </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 dark:text-gray-400">
-                {data}
+                {data === '-' ? (
+                  <p>-</p>
+                ) : (
+                  <a
+                    href={data}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline"
+                  >
+                    {data}
+                  </a>
+                )}
               </dd>
             </div>
             {/* 7 */}

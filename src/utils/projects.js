@@ -5,7 +5,7 @@ const projects = [
     name: 'Loker.id',
     image: '/images/projects/reactjs_lokerid.jpg',
     link: 'https://web-app-job-vacancy.vercel.app/',
-    source_code: '',
+    source_code: 'https://github.com/KakaBewok/web-app-job-vacancy',
     description:
       'This website is useful for providing information on job vacancies in Indonesia. This website acts as a facilitator of job matching and communication between job seekers and employers.',
     category: 'Front-End Web',
@@ -21,6 +21,7 @@ const projects = [
     name: 'Movie Catalogue (PWAs)',
     image: '/images/projects/frontend_expert_movie_catalogue.jpg',
     link: 'https://movie-catalogue-pwas-noprizal.netlify.app/',
+    source_code: 'https://github.com/KakaBewok/movie-catalogue-pwa',
     description:
       'This website is used to provide references for the best films to be showed.',
     category: 'Front-End Web',
@@ -35,6 +36,7 @@ const projects = [
     name: 'Homestay App',
     image: '/images/projects/homestay_app.jpg',
     link: 'https://homestay-reactjs-noprizal.netlify.app/',
+    source_code: 'https://github.com/KakaBewok/homestay-finder',
     description: 'Web that provides homestay information at the best price.',
     category: 'Front-End Web',
     tech_stack: 'Reactjs',
@@ -48,6 +50,7 @@ const projects = [
     name: 'Notes App',
     image: '/images/projects/notesapp_darkmode_reactjs.jpg',
     link: 'https://kakabewok.github.io/todoapp-reactjs/',
+    source_code: 'https://github.com/KakaBewok/todoapp-reactjs',
     description:
       'A useful website for storing important notes that are often forgotten',
     category: 'Front-End Web',
@@ -62,6 +65,7 @@ const projects = [
     name: 'RESTful API Open Music',
     image: '/images/projects/backend_funda_openmusic.jpg',
     link: 'https://github.com/KakaBewok/restfull-API-openmusic-HAPI',
+    source_code: 'https://github.com/KakaBewok/restfull-API-openmusic-HAPI',
     description:
       'RESTful API Open Music is useful for providing music data, such as albums, songs, playlists and singers that will be used by front-end applications',
     category: 'Back-End Web',
@@ -76,6 +80,7 @@ const projects = [
     name: 'RESTful API Bookshelf',
     image: '/images/projects/backend_pemula_bookshelf.jpg',
     link: 'https://github.com/KakaBewok/restfull-bookshelf-app-dicoding',
+    source_code: 'https://github.com/KakaBewok/restfull-bookshelf-app-dicoding',
     description:
       'RESTful API Bookshelf is useful for providing book data, such as title, author, etc. that will be used by front-end applications',
     category: 'Back-End Web',
@@ -90,6 +95,8 @@ const projects = [
     name: 'Notes App 2',
     image: '/images/projects/react_funda_notesapp.jpg',
     link: 'https://submission-funda-react-noprizal.netlify.app/',
+    source_code:
+      'https://github.com/KakaBewok/submission-fundamental-react-dicoding',
     description:
       'A useful website for storing important notes that are often forgotten.',
     category: 'Front-End Web',
@@ -105,6 +112,7 @@ const projects = [
     name: 'Notes App 3',
     image: '/images/projects/reactjs_pemula_notesapp.jpg',
     link: 'https://basic-reactjs-dicoding-noprizal.netlify.app/',
+    source_code: 'https://github.com/KakaBewok/aplikasi-notesapp-react',
     description:
       'A useful website for storing important notes that are often forgotten.',
     category: 'Front-End Web',
@@ -119,6 +127,8 @@ const projects = [
     name: 'FoodFinder/>',
     image: '/images/projects/frontend_expert_resto.jpg',
     link: 'https://submission-frontend-expert-dicoding.vercel.app/',
+    source_code:
+      'https://github.com/KakaBewok/submission-frontend-expert-dicoding',
     description:
       'This website is used to provide references for the best restaurants in Indonesia',
     category: 'Front-End Web',
@@ -134,6 +144,7 @@ const projects = [
     name: 'XXI Movie Catalogue',
     image: '/images/projects/frontend_funda_movie_catalogue.jpg',
     link: 'https://funda-frontend-movie.netlify.app/',
+    source_code: 'https://github.com/KakaBewok/movie-app-fetch-api-dicoding',
     description:
       'This website is used to provide references for the best films to be showed.',
     category: 'Front-End Web',
@@ -148,6 +159,8 @@ const projects = [
     name: 'RBus',
     image: '/images/projects/bus_akap.jpg',
     link: 'http://bus-akap-ticket.epizy.com/',
+    source_code:
+      'https://github.com/KakaBewok/aplikasi-booking-ticket-BUS-AKAP',
     description: 'This website is useful for ordering bus tickets',
     category: 'Back-End and Front-End Web',
     tech_stack: 'Vanila PHP and MySQL',
@@ -161,6 +174,8 @@ const projects = [
     name: 'Simple SIAKAD',
     image: '/images/projects/siakad.jpg',
     link: 'http://siakad-noprizal.great-site.net/',
+    source_code:
+      'https://github.com/KakaBewok/aplikasi-form-input-mahasiswa-PHP',
     description: 'This website is useful for storing and managing student data',
     category: 'Back-End and Front-End Web',
     tech_stack: 'Vanila PHP and MySQL',
@@ -175,6 +190,7 @@ const projects = [
     name: 'Web Portfolio Bootstrap 5.0',
     image: '/images/projects/porto_bs5.jpg',
     link: 'https://kakabewok.github.io/portfolio-bootstrap-V5/',
+    source_code: 'https://github.com/KakaBewok/portfolio-bootstrap-V5',
     description: 'Website Portfolio',
     category: 'Front-End Web',
     tech_stack: 'HTML, CSS, Js, GSAP, AOS and Bootstrap 5.0',
@@ -188,6 +204,7 @@ const projects = [
     name: 'Web Restaurant "Ristorante con Fusion"',
     image: '/images/projects/reactjs_coursera.jpg',
     link: 'https://frontend-react-coursera.netlify.app/',
+    source_code: 'https://github.com/KakaBewok/latihan-reactjs-coursera',
     description:
       'This website is used to provide references for the best restaurants in Hongkong',
     category: 'Front-End Web',
@@ -202,6 +219,7 @@ const projects = [
     name: 'Tuku Mangan',
     image: '/images/projects/tuku_mangan.jpg',
     link: 'https://kakabewok.github.io/resto-tuku-mangan/',
+    source_code: 'https://github.com/KakaBewok/resto-tuku-mangan',
     description:
       'This website is only an overview of the online food ordering website',
     category: 'Front-End Web',
