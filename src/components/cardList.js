@@ -29,7 +29,7 @@ const CardList = () => {
             </div>
           ))
         : projectsListbyFilter.map((project) => (
-            <div className="mx-auto ">
+            <div className="mx-auto">
               <Card key={project.id} {...project} />
             </div>
           ))}

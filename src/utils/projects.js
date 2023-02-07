@@ -165,7 +165,7 @@ const projects = [
     category: 'Back-End and Front-End Web',
     tech_stack: 'Vanila PHP and MySQL',
     feature: 'Ordering Bus Ticket',
-    data: 'MySQL',
+    data: '-',
     year: 2022,
   },
   //   12
@@ -181,7 +181,7 @@ const projects = [
     tech_stack: 'Vanila PHP and MySQL',
     feature:
       'Signup, Login, Logout, Print Document, Upload Image, Live Search and CRUD Student Data',
-    data: 'MySQL',
+    data: '-',
     year: 2022,
   },
   //   13

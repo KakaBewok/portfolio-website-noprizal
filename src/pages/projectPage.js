@@ -20,7 +20,7 @@ const ProjectPage = () => {
             <FilterProject />
           </div>
         </div>
-        <div className="gap-5 flex flex-wrap">
+        <div className="flex gap-y-10 flex-wrap">
           <CardList />
         </div>
       </div>
