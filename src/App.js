@@ -4,6 +4,7 @@ import { GlobalProvider } from './context/globalContext';
 import HomePage from './pages/homePage';
 import ProjectPage from './pages/projectPage';
 import DetailProjectPage from './pages/detailProjectPage';
+import NotFoundPage from './pages/notFoundPage';
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
           <Route path="/certificate" element={<h1>Certificate</h1>} />
           <Route path="/about" element={<h1>About</h1>} />
           <Route path="/contact" element={<h1>Contact</h1>} />
+
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </GlobalProvider>
     </>
