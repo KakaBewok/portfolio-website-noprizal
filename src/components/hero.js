@@ -12,16 +12,14 @@ const Hero = () => {
       <div className="relative z-20 flex items-center h-screen dark:bg-gray-700">
         <div className="container relative flex flex-col items-center justify-between px-6 pt-12 mx-auto">
           <div className="flex flex-col">
-            <p className="my-6 text-xl md:text-3xl text-center dark:text-white">
-              {locale === 'ID'
-                ? 'Hai, saya Rizal dan saya seorang Pengembang Website 🤘'
-                : "Hi, I'm Rizal and I'm a Website Developer 🤘"}
-            </p>
-            <h2 className="max-w-3xl py-2 mx-auto text-5xl font-bold text-center text-primary lg:text-6xl dark:text-white">
-              {locale === 'ID'
-                ? 'Membangun produk, merek, dan pengalaman digital.'
-                : ' Building digital products, brands, and experiences.'}
+            <h2 className="max-w-5xl py-2 mx-auto text-5xl font-bold text-center text-primary lg:text-7xl dark:text-white">
+              {locale === 'ID' ? 'HAI, SAYA NOPRIZAL🤘' : "HI, I'AM NOPRIZAL🤘"}
             </h2>
+            <p className="my-6 text-sm md:text-xl text-center dark:text-white">
+              {locale === 'ID'
+                ? 'PENGGEMAR JAVASCRIPT & PENGEMBANG WEBSITE'
+                : 'JAVASCRIPT ENTHUSIAST & WEB DEVELOPER'}
+            </p>
 
             <div className="flex gap-5 items-center justify-center mt-4">
               <Link to="/project">
