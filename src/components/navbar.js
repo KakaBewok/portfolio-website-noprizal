@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <div className="navbar bg-base-100 dark:bg-gray-500 dark:text-gray-100 fixed top-0 left-0 right-0 z-50 bg-transparent">
+      <div className="navbar bg-base-100 dark:text-gray-100 fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md">
         {/* Hamburger Menu */}
         <div className="navbar-start">
           <div className="dropdown">
@@ -32,14 +32,10 @@ const Navbar = () => {
                 />
               </svg>
             </label>
+
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow-md bg-base-100 rounded-box w-52 dark:bg-gray-500 bg-transparent backdrop-blur-sm"
-              // style={{
-              //   backgroundImage: `url("/images/bg-gradient.svg")`,
-              //   objectFit: 'contain',
-              //   backgroundRepeat: 'no-repeat',
-              // }}
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow-md rounded-box w-52 dark:bg-slate-600 bg-[#FBF1D3]"
             >
               <li>
                 <Link to="/home">
