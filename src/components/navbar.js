@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <div className="navbar bg-base-100 dark:text-gray-100 fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md">
+      <div className="navbar dark:text-gray-100 fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md">
         {/* Hamburger Menu */}
         <div className="navbar-start">
           <div className="dropdown">

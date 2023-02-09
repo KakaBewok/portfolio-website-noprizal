@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Card = ({ id, image, name, tech_stack, link }) => {
   return (
     <>
-      <div className="card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-transparent ">
+      <div className="card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-opacity-0">
         <figure className="px-10 pt-10">
           <a href={link} target="_blank" rel="noreferrer">
             <img
