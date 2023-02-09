@@ -48,11 +48,6 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/certificate">
-                  <a>{locale === 'ID' ? 'Sertifikat' : 'Certificates'}</a>
-                </Link>
-              </li>
-              <li>
                 <Link to="/about">
                   <a>{locale === 'ID' ? 'Tentang' : 'About'}</a>
                 </Link>

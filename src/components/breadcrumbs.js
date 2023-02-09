@@ -33,17 +33,6 @@ const Breadcrumbs = () => {
             </Link>
           </li>
           <li>
-            <Link to="/certificate">
-              {window.location.href.includes('certificate') ? (
-                <a className="font-semibold underline">
-                  {locale === 'ID' ? 'Sertifikat' : 'Certificates'}
-                </a>
-              ) : (
-                <a> {locale === 'ID' ? 'Sertifikat' : 'Certificates'}</a>
-              )}
-            </Link>
-          </li>
-          <li>
             <Link to="/about">
               {window.location.href.includes('about') ? (
                 <a className="font-semibold underline">

@@ -21,11 +21,6 @@ const Footer = () => {
               {locale === 'ID' ? 'Proyek' : 'Projects'}
             </a>
           </Link>
-          <Link to="/certificate">
-            <a className="link link-hover">
-              {locale === 'ID' ? 'Sertifikat' : 'Certificates'}
-            </a>
-          </Link>
           <Link to="/about">
             <a className="link link-hover">
               {locale === 'ID' ? 'Tentang' : 'About'}
