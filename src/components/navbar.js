@@ -32,10 +32,10 @@ const Navbar = () => {
                 />
               </svg>
             </label>
-
+            {/* bg-[#DEFCF9] */}
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow-md rounded-box w-52 dark:bg-slate-600 bg-[#DEFCF9]"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow-md rounded-box w-52 bg-gradient2 dark:bg-slate-600"
             >
               <li>
                 <Link to="/home">
