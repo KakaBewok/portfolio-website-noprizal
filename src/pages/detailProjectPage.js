@@ -7,7 +7,7 @@ import Footer from '../components/footer';
 
 const DetailProjectPage = () => {
   return (
-    <>
+    <div className="bg-gradient-to-r from-gradient1 to-gradient2">
       <Navbar />
       <div className="py-24 dark:bg-slate-700">
         <Breadcrumbs />
@@ -19,7 +19,7 @@ const DetailProjectPage = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

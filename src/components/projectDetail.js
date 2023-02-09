@@ -27,7 +27,7 @@ const ProjectDetail = () => {
 
   return (
     <>
-      <div className="rounded-lg mx-auto max-w-[90%] md:max-w-[80%] lg:max-w-[70%] overflow-hidden bg-white shadow-lg dark:bg-slate-800">
+      <div className="rounded-lg mx-auto max-w-[90%] md:max-w-[80%] lg:max-w-[70%] overflow-hidden bg-transparent shadow-lg dark:bg-slate-800">
         {/* HEADER */}
         <div className="px-4 py-5 sm:px-6 dark:bg-gray-800">
           <img
@@ -56,7 +56,7 @@ const ProjectDetail = () => {
         <div className="border-t border-gray-200 dark:border-none">
           <dl>
             {/* 1 */}
-            <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+            <div className="px-4 py-5 bg-transparent  sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 {locale === 'ID' ? 'Nama Proyek' : 'Project Name'}
               </dt>
@@ -65,7 +65,7 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 2 */}
-            <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+            <div className="px-4 py-5 bg-transparent  sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 {locale === 'ID' ? 'Deskripsi' : 'Description'}
               </dt>
@@ -74,7 +74,7 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 3 */}
-            <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+            <div className="px-4 py-5 bg-transparent sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 {locale === 'ID' ? 'Kategori' : 'Category'}
               </dt>
@@ -83,7 +83,7 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 4 */}
-            <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+            <div className="px-4 py-5 bg-transparent sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 {locale === 'ID' ? 'Teknologi' : 'Tech Stack'}
               </dt>
@@ -92,7 +92,7 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 5 */}
-            <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+            <div className="px-4 py-5 bg-transparent sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 {locale === 'ID' ? 'Fitur' : 'Feature'}
               </dt>
@@ -101,7 +101,7 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 6 */}
-            <div className="px-4 py-5 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+            <div className="px-4 py-5 bg-transparent sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 {locale === 'ID' ? 'Sumber Data' : 'Source Data'}
               </dt>
@@ -121,7 +121,7 @@ const ProjectDetail = () => {
               </dd>
             </div>
             {/* 7 */}
-            <div className="px-4 py-5 bg-slate-100 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
+            <div className="px-4 py-5 bg-transparent sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 dark:bg-slate-800">
               <dt className="text-md font-semibold text-slate-800 dark:text-slate-100">
                 {locale === 'ID' ? 'Tahun' : 'Year'}
               </dt>
