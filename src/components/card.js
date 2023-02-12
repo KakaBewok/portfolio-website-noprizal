@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Card = ({ id, image, name, tech_stack, link }) => {
+const Card = ({ id, image, name, tech_stack, link, tech_stack_logo }) => {
   return (
     <>
       <div className="card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-opacity-0">
@@ -17,7 +17,10 @@ const Card = ({ id, image, name, tech_stack, link }) => {
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title dark:text-white font-bold">{name}</h2>
-          <p className="dark:text-gray-300">{tech_stack}</p>
+          {/* <p className="dark:text-gray-300">{tech_stack}</p> */}
+          <div className="flex flex-wrap items-center gap-3">
+            {tech_stack_logo}
+          </div>
           <div className="card-actions">
             <Link to={`/project/${id}`}>
               <button className="btn btn-primary btn-sm text-xs mt-2">
