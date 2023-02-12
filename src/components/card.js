@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Card = ({ id, image, name, tech_stack, link, tech_stack_logo }) => {
+const Card = ({ id, image, name, link, tech_stack_logo }) => {
   return (
     <>
       <div className="card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-opacity-0">
