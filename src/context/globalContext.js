@@ -19,6 +19,12 @@ export const GlobalProvider = (props) => {
     return searchParams.get('keyword') || '';
   });
   const [filter, setFilter] = useState('');
+  const InputContact = {
+    name: '',
+    email: '',
+    message: '',
+  };
+  const [inputContact, setInputContact] = useState(InputContact);
 
   const objectState = useMemo(() => {
     return {
@@ -34,8 +40,10 @@ export const GlobalProvider = (props) => {
       setKeyword,
       filter,
       setFilter,
+      inputContact,
+      setInputContact,
     };
-  }, [theme, locale, projects, searchParams, keyword, filter]);
+  }, [theme, locale, projects, searchParams, keyword, filter, inputContact]);
 
   return (
     <GlobalContext.Provider value={objectState}>
