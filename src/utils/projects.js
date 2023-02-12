@@ -228,6 +228,20 @@ const projects = [
     data: '-',
     year: 2022,
   },
+  //   16
+  {
+    id: 16,
+    name: 'Web Portfolio Noprizal',
+    image: '/images/projects/web_porto_fixed.jpg',
+    link: 'https://portfolio-website-noprizal.vercel.app/',
+    source_code: 'https://github.com/KakaBewok/portfolio-website-noprizal',
+    description: 'Website portfolio updated',
+    category: 'Front-End Web',
+    tech_stack: 'Reactjs & Tailwind',
+    feature: 'Darkmode, Translate (ID/EN), Search & Filter Project',
+    data: '-',
+    year: 2023,
+  },
 ];
 
 export default projects;
