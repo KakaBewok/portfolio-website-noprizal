@@ -6,17 +6,17 @@ import 'aos/dist/aos.css';
 
 const Card = ({ id, image, name, link, tech_stack_logo }) => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
   }, []);
 
   return (
     <>
       <div
         className="card-project card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-opacity-0"
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="600"
-        data-aos-delay="300"
+        data-aos-delay="500"
       >
         <figure className="px-10 pt-10">
           <a href={link} target="_blank" rel="noreferrer">
