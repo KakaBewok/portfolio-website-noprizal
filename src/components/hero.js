@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="flex flex-col">
             <h2
               data-aos="fade-down"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               className="max-w-5xl py-2 mx-auto text-5xl font-bold text-center text-primary lg:text-7xl dark:text-white"
             >
               {locale === 'ID' ? 'HAI, SAYA NOPRIZAL🤘' : "HI, I'AM NOPRIZAL🤘"}
