@@ -17,12 +17,13 @@ const Hero = () => {
       {/* Hero */}
       <div className="relative z-20 flex items-center h-screen dark:bg-gray-700">
         <div className="container relative flex flex-col items-center justify-between px-6 pt-12 mx-auto">
-          <div className="flex flex-col">
-            <h2
-              data-aos="fade-down"
-              data-aos-duration="1000"
-              className="max-w-5xl py-2 mx-auto text-5xl font-bold text-center text-primary lg:text-7xl dark:text-white"
-            >
+          <div
+            className="flex flex-col"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="700"
+          >
+            <h2 className="max-w-5xl py-2 mx-auto text-5xl font-bold text-center text-primary lg:text-7xl dark:text-white">
               {locale === 'ID' ? 'HAI, SAYA NOPRIZAL🤘' : "HI, I'AM NOPRIZAL🤘"}
             </h2>
             <p className="font-semibold my-6 text-sm md:text-2xl text-center dark:text-white">
