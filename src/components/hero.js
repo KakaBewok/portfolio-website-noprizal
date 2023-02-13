@@ -19,9 +19,9 @@ const Hero = () => {
         <div className="container relative flex flex-col items-center justify-between px-6 pt-12 mx-auto">
           <div
             className="flex flex-col"
-            data-aos="fade-down"
+            data-aos="fade-up"
             data-aos-easing="linear"
-            data-aos-duration="700"
+            data-aos-duration="500"
           >
             <h2 className="max-w-5xl py-2 mx-auto text-5xl font-bold text-center text-primary lg:text-7xl dark:text-white">
               {locale === 'ID' ? 'HAI, SAYA NOPRIZAL🤘' : "HI, I'AM NOPRIZAL🤘"}

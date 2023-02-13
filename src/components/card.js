@@ -12,10 +12,11 @@ const Card = ({ id, image, name, link, tech_stack_logo }) => {
   return (
     <>
       <div
-        className="card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-opacity-0"
-        data-aos="fade-up"
+        className="card-project card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-opacity-0"
+        data-aos="fade-right"
         data-aos-easing="linear"
         data-aos-duration="600"
+        data-aos-delay="300"
       >
         <figure className="px-10 pt-10">
           <a href={link} target="_blank" rel="noreferrer">
