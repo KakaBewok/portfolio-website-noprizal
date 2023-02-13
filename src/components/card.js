@@ -13,7 +13,7 @@ const Card = ({ id, image, name, link, tech_stack_logo }) => {
     <>
       <div
         className="card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-opacity-0"
-        data-aos="fade-left"
+        data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="500"
       >
