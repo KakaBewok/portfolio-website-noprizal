@@ -1,9 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from '../context/globalContext';
 import { useParams } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectDetail = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   const { projects, locale } = useContext(GlobalContext);
   const { id } = useParams();
 
@@ -27,7 +33,13 @@ const ProjectDetail = () => {
 
   return (
     <>
-      <div className="rounded-lg mx-auto max-w-[90%] md:max-w-[80%] lg:max-w-[70%] overflow-hidden bg-transparent shadow-lg dark:bg-slate-800">
+      <div
+        className="rounded-lg mx-auto max-w-[90%] md:max-w-[80%] lg:max-w-[70%] overflow-hidden bg-transparent shadow-lg dark:bg-slate-800"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="300"
+        data-aos-delay="400"
+      >
         {/* HEADER */}
         <div className="px-4 py-5 sm:px-6 dark:bg-gray-800">
           <img

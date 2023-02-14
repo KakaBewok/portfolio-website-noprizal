@@ -1,8 +1,14 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from '../context/globalContext';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   const { inputContact, setInputContact, locale } = useContext(GlobalContext);
 
   const scriptURL =
@@ -85,6 +91,10 @@ const Contact = () => {
         className="flex w-[90%] md:max-w-5xl lg:max-w-6xl space-x-3 mx-auto"
         name="submit-to-google-sheet"
         onSubmit={handleSubmit}
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="300"
+        data-aos-delay="400"
       >
         <div className="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-transparent rounded-lg shadow-md dark:bg-gray-800">
           <div className="md:px-7 mb-3 text-3xl font-semibold text-left text-gray-800 dark:text-white">

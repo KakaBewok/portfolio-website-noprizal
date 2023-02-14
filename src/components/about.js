@@ -1,9 +1,15 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from '../context/globalContext';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   const { locale } = useContext(GlobalContext);
 
   const about_indo =
@@ -14,7 +20,13 @@ const About = () => {
 
   return (
     <>
-      <div className="relative z-20 flex items-center overflow-hidden bg-transparent ">
+      <div
+        className="relative z-20 flex items-center overflow-hidden bg-transparent "
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="300"
+        data-aos-delay="400"
+      >
         <div className="container relative flex flex-wrap px-6 md:px-24 py-10 mx-auto ">
           {/* Image */}
           <div className="relative mx-auto mb-5 w-32 md:w-full lg:w-2/5 ">
