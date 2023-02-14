@@ -9,6 +9,7 @@
     "aos": "^3.0.0-beta.6",
     "cookies-js": "^1.2.3",
     "daisyui": "^2.49.0",
+    "gsap": "^3.11.4",
     "js-cookie": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

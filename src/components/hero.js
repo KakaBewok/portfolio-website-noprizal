@@ -1,16 +1,29 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from '../context/globalContext';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { gsap } from 'gsap';
+import { TextPlugin } from 'gsap/TextPlugin.js';
 
 const Hero = () => {
   const { locale } = useContext(GlobalContext);
 
   useEffect(() => {
     AOS.init();
-  }, []);
+
+    gsap.registerPlugin(TextPlugin);
+
+    gsap.from('.greetings', { duration: 2, delay: 0, text: '' });
+
+    gsap.to('.greetings', {
+      text: locale === 'ID' ? 'HAI, SAYA NOPRIZAL🤘' : "HI, I'AM NOPRIZAL🤘",
+      duration: 2,
+      delay: 0,
+    });
+  }, [locale]);
 
   return (
     <>
@@ -23,10 +36,8 @@ const Hero = () => {
             data-aos-easing="linear"
             data-aos-duration="500"
           >
-            <h2 className="max-w-5xl py-2 mx-auto text-5xl font-bold text-center text-primary lg:text-7xl dark:text-white">
-              {locale === 'ID' ? 'HAI, SAYA NOPRIZAL🤘' : "HI, I'AM NOPRIZAL🤘"}
-            </h2>
-            <p className="font-semibold my-6 text-sm md:text-2xl text-center dark:text-white">
+            <h2 className="greetings max-w-5xl py-2 mx-auto text-5xl font-bold text-center text-primary lg:text-7xl dark:text-white"></h2>
+            <p className="role font-semibold my-6 text-sm md:text-2xl text-center dark:text-white">
               {locale === 'ID'
                 ? 'PENGGEMAR JAVASCRIPT & PENGEMBANG WEBSITE'
                 : 'JAVASCRIPT ENTHUSIAST & WEB DEVELOPER'}
