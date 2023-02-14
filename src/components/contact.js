@@ -94,7 +94,7 @@ const Contact = () => {
         data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="300"
-        data-aos-delay="400"
+        data-aos-delay="100"
       >
         <div className="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-transparent rounded-lg shadow-md dark:bg-gray-800">
           <div className="md:px-7 mb-3 text-3xl font-semibold text-left text-gray-800 dark:text-white">

@@ -25,7 +25,7 @@ const About = () => {
         data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="300"
-        data-aos-delay="400"
+        data-aos-delay="100"
       >
         <div className="container relative flex flex-wrap px-6 md:px-24 py-10 mx-auto ">
           {/* Image */}

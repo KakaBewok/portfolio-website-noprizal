@@ -1,23 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Card = ({ id, image, name, link, tech_stack_logo }) => {
-  useEffect(() => {
-    AOS.init({ once: true });
-  }, []);
-
   return (
     <>
-      <div
-        className="card-project card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-opacity-0"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="300"
-        data-aos-delay="400"
-      >
+      <div className="card-project card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-opacity-0">
         <figure className="px-10 pt-10">
           <a href={link} target="_blank" rel="noreferrer">
             <img
