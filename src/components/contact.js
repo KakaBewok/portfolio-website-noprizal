@@ -102,8 +102,8 @@ const Contact = () => {
           </div>
           <p className="md:px-7 text-xs mb-5 dark:text-white">
             {locale === 'ID'
-              ? 'Punya pertanyaan atau proposal, atau hanya ingin menyapa? Teruskan.'
-              : 'Got a question or proposal, or just want to say hello? Go ahead.'}
+              ? 'Punya pertanyaan atau proposal, atau hanya ingin menyapa? Teruskan!'
+              : 'Got a question or proposal, or just want to say hello? Go ahead!'}
           </p>
           <div className="grid max-w-xl md:max-w-5xl grid-cols-2 gap-4 md:gap-5 m-auto md:px-7">
             {/* name */}
@@ -113,7 +113,7 @@ const Contact = () => {
                   type="text"
                   id="contact-form-name"
                   className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                  placeholder="John Doe"
+                  placeholder={locale === 'ID' ? 'Nama' : 'Name'}
                   name="name"
                   onChange={(e) => handleChange(e)}
                   value={inputContact.name}
@@ -128,7 +128,7 @@ const Contact = () => {
                   type="text"
                   id="contact-form-email"
                   className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                  placeholder="john.doe@gmail.com"
+                  placeholder="Email"
                   name="email"
                   required
                   onChange={(e) => handleChange(e)}
@@ -142,11 +142,7 @@ const Contact = () => {
                 <textarea
                   className="max-h-40 min-h-16 flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   id="comment"
-                  placeholder={
-                    locale === 'ID'
-                      ? 'Hai, saya rasa kami memerlukan aplikasi web untuk produk kami di Perusahaan X. Seberapa cepat Anda bisa berharap untuk membahas ini?!'
-                      : 'Hi, I think we need a web app for our products at Company X. How soon can you hope on to discuss this?!'
-                  }
+                  placeholder={locale === 'ID' ? 'Pesan' : 'Message'}
                   name="message"
                   required
                   rows={5}
