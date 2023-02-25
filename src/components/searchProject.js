@@ -17,7 +17,7 @@ const SearchProject = () => {
   return (
     <>
       <input
-        type="text"
+        type="search"
         placeholder={locale === 'ID' ? 'Cari Proyek' : 'Search Project'}
         value={keyword}
         onChange={(event) => keywordSearchChangeHandler(event.target.value)}
