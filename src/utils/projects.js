@@ -11,9 +11,29 @@ import {
   pwa_logo,
   redux_logo,
   hapi_logo,
+  mongo_db,
+  express,
+  node,
 } from './logo';
 
 const projects = [
+  //   0
+  {
+    id: 0,
+    name: 'DevConnector (Under Maintenance)',
+    image: '/images/projects/dev_connector.jpg',
+    link: '',
+    source_code: 'https://github.com/KakaBewok/social-connector',
+    description:
+      'Create a developer profile and portfolio, share posts and get help from other developers',
+    category: 'Fullstack Web',
+    tech_stack: 'MongoDB, ExpressJs, ReactJs, NodeJs, Redux',
+    tech_stack_logo: [mongo_db, express, react_logo, node, redux_logo],
+    feature:
+      'Authentication & Authorization, Dashboard, CRUD Profile, Comment & Like Post',
+    data: '-',
+    year: 2023,
+  },
   //   1
   {
     id: 1,
@@ -95,55 +115,55 @@ const projects = [
     year: 2022,
   },
   //   6
-  {
-    id: 6,
-    name: 'RESTful API Bookshelf',
-    image: '/images/projects/backend_pemula_bookshelf.jpg',
-    link: 'https://github.com/KakaBewok/restfull-bookshelf-app-dicoding',
-    source_code: 'https://github.com/KakaBewok/restfull-bookshelf-app-dicoding',
-    description:
-      'RESTful API Bookshelf is useful for providing book data, such as title, author, etc. that will be used by front-end applications',
-    category: 'Back-End Web',
-    tech_stack: 'Native Javascript',
-    tech_stack_logo: [js_logo],
-    feature: 'RESTful API',
-    data: 'Array of Object',
-    year: 2022,
-  },
+  // {
+  //   id: 6,
+  //   name: 'RESTful API Bookshelf',
+  //   image: '/images/projects/backend_pemula_bookshelf.jpg',
+  //   link: 'https://github.com/KakaBewok/restfull-bookshelf-app-dicoding',
+  //   source_code: 'https://github.com/KakaBewok/restfull-bookshelf-app-dicoding',
+  //   description:
+  //     'RESTful API Bookshelf is useful for providing book data, such as title, author, etc. that will be used by front-end applications',
+  //   category: 'Back-End Web',
+  //   tech_stack: 'Native Javascript',
+  //   tech_stack_logo: [js_logo],
+  //   feature: 'RESTful API',
+  //   data: 'Array of Object',
+  //   year: 2022,
+  // },
   //   7
-  {
-    id: 7,
-    name: 'Notes App 2',
-    image: '/images/projects/react_funda_notesapp.jpg',
-    link: 'https://submission-funda-react-noprizal.netlify.app/',
-    source_code:
-      'https://github.com/KakaBewok/submission-fundamental-react-dicoding',
-    description:
-      'A useful website for storing important notes that are often forgotten.',
-    category: 'Front-End Web',
-    tech_stack: 'Reactjs',
-    tech_stack_logo: [react_logo],
-    feature:
-      'Dark Mode, Translate (Bahasa/English), Live Search Notes, Signup, Login, Logout and CRUD',
-    data: 'https://notes-api.dicoding.dev/',
-    year: 2023,
-  },
+  // {
+  //   id: 7,
+  //   name: 'Notes App 2',
+  //   image: '/images/projects/react_funda_notesapp.jpg',
+  //   link: 'https://submission-funda-react-noprizal.netlify.app/',
+  //   source_code:
+  //     'https://github.com/KakaBewok/submission-fundamental-react-dicoding',
+  //   description:
+  //     'A useful website for storing important notes that are often forgotten.',
+  //   category: 'Front-End Web',
+  //   tech_stack: 'Reactjs',
+  //   tech_stack_logo: [react_logo],
+  //   feature:
+  //     'Dark Mode, Translate (Bahasa/English), Live Search Notes, Signup, Login, Logout and CRUD',
+  //   data: 'https://notes-api.dicoding.dev/',
+  //   year: 2023,
+  // },
   //   8
-  {
-    id: 8,
-    name: 'Notes App 3',
-    image: '/images/projects/reactjs_pemula_notesapp.jpg',
-    link: 'https://basic-reactjs-dicoding-noprizal.netlify.app/',
-    source_code: 'https://github.com/KakaBewok/aplikasi-notesapp-react',
-    description:
-      'A useful website for storing important notes that are often forgotten.',
-    category: 'Front-End Web',
-    tech_stack: 'Reactjs',
-    tech_stack_logo: [react_logo],
-    feature: 'Create, Read, Update and Delete',
-    data: '-',
-    year: 2022,
-  },
+  // {
+  //   id: 8,
+  //   name: 'Notes App 3',
+  //   image: '/images/projects/reactjs_pemula_notesapp.jpg',
+  //   link: 'https://basic-reactjs-dicoding-noprizal.netlify.app/',
+  //   source_code: 'https://github.com/KakaBewok/aplikasi-notesapp-react',
+  //   description:
+  //     'A useful website for storing important notes that are often forgotten.',
+  //   category: 'Front-End Web',
+  //   tech_stack: 'Reactjs',
+  //   tech_stack_logo: [react_logo],
+  //   feature: 'Create, Read, Update and Delete',
+  //   data: '-',
+  //   year: 2022,
+  // },
   //   9
   {
     id: 9,
@@ -227,21 +247,21 @@ const projects = [
     year: 2022,
   },
   //   14
-  {
-    id: 14,
-    name: 'Web Restaurant "Ristorante con Fusion"',
-    image: '/images/projects/reactjs_coursera.jpg',
-    link: 'https://frontend-react-coursera.netlify.app/',
-    source_code: 'https://github.com/KakaBewok/latihan-reactjs-coursera',
-    description:
-      'This website is used to provide references for the best restaurants in Hongkong',
-    category: 'Front-End Web',
-    tech_stack: 'Reactjs, Bootstrap and React-Redux',
-    tech_stack_logo: [react_logo, redux_logo, bs_logo],
-    feature: '-',
-    data: 'json-server',
-    year: 2023,
-  },
+  // {
+  //   id: 14,
+  //   name: 'Web Restaurant "Ristorante con Fusion"',
+  //   image: '/images/projects/reactjs_coursera.jpg',
+  //   link: 'https://frontend-react-coursera.netlify.app/',
+  //   source_code: 'https://github.com/KakaBewok/latihan-reactjs-coursera',
+  //   description:
+  //     'This website is used to provide references for the best restaurants in Hongkong',
+  //   category: 'Front-End Web',
+  //   tech_stack: 'Reactjs, Bootstrap and React-Redux',
+  //   tech_stack_logo: [react_logo, redux_logo, bs_logo],
+  //   feature: '-',
+  //   data: 'json-server',
+  //   year: 2023,
+  // },
   //   15
   {
     id: 15,

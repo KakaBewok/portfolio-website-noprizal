@@ -57,7 +57,11 @@ const ProjectDetail = () => {
               </a>
             </div>
             <div>
-              <a href={link} target="_blank" rel="noreferrer">
+              <a
+                href={link}
+                target={link === '' ? '' : '_blank'}
+                rel="noreferrer"
+              >
                 <button className="btn btn-success text-white tracking-widest mt-5 px-12 md:px-28 hover:opacity-80">
                   Demo
                 </button>

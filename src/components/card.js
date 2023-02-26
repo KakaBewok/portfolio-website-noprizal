@@ -7,7 +7,7 @@ const Card = ({ id, image, name, link, tech_stack_logo }) => {
     <>
       <div className="card-project card w-[20rem] md:w-[21rem] lg:w-[23rem] bg-base-100 shadow-lg hover:cursor-pointer dark:bg-gray-800 bg-opacity-0">
         <figure className="px-10 pt-10">
-          <a href={link} target="_blank" rel="noreferrer">
+          <a href={link} target={link === '' ? '' : '_blank'} rel="noreferrer">
             <img
               src={image}
               alt={name}
@@ -17,7 +17,6 @@ const Card = ({ id, image, name, link, tech_stack_logo }) => {
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title dark:text-white font-bold">{name}</h2>
-          {/* <p className="dark:text-gray-300">{tech_stack}</p> */}
           <div className="flex flex-wrap items-center gap-3">
             {tech_stack_logo}
           </div>
